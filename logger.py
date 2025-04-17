@@ -30,7 +30,7 @@ def get_logger(name=None, stack_offset=1):
     logger = logging.getLogger(name)
 
     if not logger.handlers:
-        logger.setLevel(logging.DEBUG)
+        logger.setLevel(logging.INFO)
 
         if not _LOG_HANDLERS:
             formatter = logging.Formatter(
