@@ -1,4 +1,17 @@
-.venv
+# Virtual env and secrets
+.venv/
 .env
+
+# Bytecode and compiled
 __pycache__/
+*.py[cod]
 *.log
+
+# Local logs, data, and Qdrant
+logs/
+qdrant_data/
+data/cases_data/
+data/laws_data/
+
+# IDE and editor configs
+.vscode/
