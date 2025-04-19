@@ -6,7 +6,7 @@ import numpy as np
 import argparse
 import time
 from qdrant_client import QdrantClient
-from qdrant_client.models import VectorParams, Distance, PointStruct
+from qdrant_client.models import VectorParams, Distance, PointStruct, TextIndexParams
 from retrieval import load_config
 from logger import get_logger
 
@@ -53,6 +53,9 @@ def main(config):
         client.create_collection(
             collection_name=collection_name,
             vectors_config=VectorParams(size=vector_size, distance=Distance.COSINE),
+            text_index_params=TextIndexParams(
+                default_field="text"  # Field in payload used for BM25
+            ),
         )
 
         # Upload vectors

@@ -10,6 +10,3 @@ chunking:
   strategy: "tokens"
   max_tokens: 2048 # max tokens per chunk, model supports up to 8192
   overlap: 256
-retriever:
-  type: "cosine"
-  top_k: 5
