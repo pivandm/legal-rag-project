@@ -1,5 +1,4 @@
-experiment_name: "jina-cosine-2048-chunks"
-collection_name: "jina-embeddings-laws"
+collection_name: "jina-laws-2048-chunks"
 embedding_model: "jinaai/jina-embeddings-v3"
 vectors_path: "data/embeddings/jina-embed/vectors.npy"
 metadata_path: "data/embeddings/jina-embed/payloads.json"

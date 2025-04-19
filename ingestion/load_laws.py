@@ -22,7 +22,7 @@ def main(config):
         collection_name = config["collection_name"]
         vector_file = config["vectors_path"]
         metadata_file = config["metadata_path"]
-        vector_size = config["chunking"]["max_tokens"]
+        vector_size = config["vector_dim"]
 
         logger.info(f"Using config for collection: {collection_name}")
         logger.info(f"Vector file: {vector_file}")

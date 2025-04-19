@@ -1,5 +1,4 @@
-experiment_name: "gte-cosine-2048-chunks"
-collection_name: "gte-embeddings-laws"
+collection_name: "gte-laws-2048-chunks"
 embedding_model: "Alibaba-NLP/gte-Qwen2-1.5B-instruct"
 vectors_path: "data/embeddings/gte-qwen/vectors.npy"
 metadata_path: "data/embeddings/gte-qwen/payloads.json"

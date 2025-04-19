@@ -47,7 +47,6 @@ def run_retriever_eval(config_name, eval_data_path):
     client = get_qdrant_client()
     collection = config["collection_name"]
     kwargs = config.get("model_kwargs", {})
-    top_k = config.get("retriever", {}).get("top_k", 5)
     logger.info(f"Evaluating retriever with config: {config_name}")
     logger.info(
         f"Collection: {collection}, Model: {config['embedding_model']}, top_k: {top_k}"
