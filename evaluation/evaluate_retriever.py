@@ -46,12 +46,11 @@ def run_retriever_eval(config_name, eval_data_path):
     model = load_model(config["embedding_model"])
     client = get_qdrant_client()
     collection = config["collection_name"]
+    kwargs = config.get("model_kwargs", {})
     top_k = config.get("retriever", {}).get("top_k", 5)
-    truncate_dim = config.get("truncate_dim", 1024)
-
     logger.info(f"Evaluating retriever with config: {config_name}")
     logger.info(
-        f"Collection: {collection}, Model: {config['embedding_model']}, top_k: {top_k}, truncate_dim: {truncate_dim}"
+        f"Collection: {collection}, Model: {config['embedding_model']}, top_k: {top_k}"
     )
 
     eval_data = load_eval_data(eval_data_path)
@@ -67,9 +66,7 @@ def run_retriever_eval(config_name, eval_data_path):
         relevant_articles = sample["relevant_articles"]
 
         try:
-            vector = model.encode(
-                [query], normalize_embeddings=True, truncate_dim=truncate_dim
-            )[0]
+            vector = model.encode([query], normalize_embeddings=True, **kwargs)[0]
 
             results = search_qdrant(
                 client=client,

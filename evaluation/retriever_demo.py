@@ -15,7 +15,6 @@ def main(config_name):
     config = load_config(config_name)
     logger.info(f"Using config: {config_name}")
     model_name = config["embedding_model"]
-    truncate_dim = config["truncate_dim"]
     logger.info(f"Using model: {model_name}")
     model = load_model(model_name)
     client = get_qdrant_client()
@@ -33,9 +32,7 @@ def main(config_name):
             break
 
         try:
-            vector = model.encode(
-                [query], normalize_embeddings=True, truncate_dim=truncate_dim
-            )[0]
+            vector = model.encode([query], normalize_embeddings=True)[0]
             results = search_qdrant(
                 client, collection_name, vector, top_k=top_k, hnsw_ef=128
             )

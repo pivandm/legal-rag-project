@@ -1,0 +1,15 @@
+experiment_name: "gte-cosine-2048-chunks"
+collection_name: "gte-embeddings-laws"
+embedding_model: "Alibaba-NLP/gte-Qwen2-1.5B-instruct"
+vectors_path: "data/embeddings/gte-qwen/vectors.npy"
+metadata_path: "data/embeddings/gte-qwen/payloads.json"
+vector_dim: 1536
+model_kwargs:
+  prompt_name: "query"
+chunking:
+  strategy: "tokens"
+  max_tokens: 2048 # max tokens per chunk, model supports up to 32768
+  overlap: 256
+retriever:
+  type: "cosine"
+  top_k: 5
