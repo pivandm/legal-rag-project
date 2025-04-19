@@ -1,0 +1,15 @@
+experiment_name: "jina-cosine-2048-chunks"
+collection_name: "jina-embeddings-laws"
+embedding_model: "jinaai/jina-embeddings-v3"
+vectors_path: "data/embeddings/jina-embed/vectors.npy"
+metadata_path: "data/embeddings/jina-embed/payloads.json"
+vector_dim: 1024
+model_kwargs:
+  task: "retrieval.query"
+chunking:
+  strategy: "tokens"
+  max_tokens: 2048 # max tokens per chunk, model supports up to 8192
+  overlap: 256
+retriever:
+  type: "cosine"
+  top_k: 5

@@ -15,3 +15,7 @@ data/laws_data/
 
 # IDE and editor configs
 .vscode/
+
+# Other files
+**/tmp.py
+
