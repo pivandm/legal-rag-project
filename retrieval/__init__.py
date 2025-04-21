@@ -1,7 +1,9 @@
 from retrieval.config import load_config
 from retrieval.tools import (
-    load_model,
+    load_dense_model,
+    load_sparse_model,
     get_qdrant_client,
-    search_qdrant,
     match_article,
+    search_qdrant,
+    search_with_precomputed_vectors,
 )

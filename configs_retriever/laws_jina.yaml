@@ -1,10 +1,11 @@
 collection_name: "jina-laws-2048-chunks"
 embedding_model: "jinaai/jina-embeddings-v3"
-vectors_path: "data/embeddings/jina-embed/vectors.npy"
-metadata_path: "data/embeddings/jina-embed/payloads.json"
+vectors_path: "data/embeddings/jina/vectors.npy"
+metadata_path: "data/embeddings/jina/payloads.json"
 vector_dim: 1024
 model_kwargs:
   task: "retrieval.query"
+  trust_remote_code: True 
 chunking:
   strategy: "tokens"
   max_tokens: 2048 # max tokens per chunk, model supports up to 8192

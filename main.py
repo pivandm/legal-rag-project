@@ -101,7 +101,7 @@ async def query_llm(messages):
         "model": MODEL_ID,
         "messages": messages,
         "top_p": 1,
-        "temperature": 0.8,
+        "temperature": 0.0,
         "frequency_penalty": 0,
         "presence_penalty": 0,
         "repetition_penalty": 1,

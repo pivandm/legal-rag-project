@@ -1,0 +1,10 @@
+collection_name: "bge-laws-2048-chunks"
+embedding_model: "BAAI/bge-m3"
+vectors_path: "data/embeddings/bge/vectors.npy"
+metadata_path: "data/embeddings/bge/payloads.json"
+vector_dim: 1024
+model_kwargs: {}
+chunking:
+  strategy: "tokens"
+  max_tokens: 2048 # max tokens per chunk, model supports up to 8192
+  overlap: 256
