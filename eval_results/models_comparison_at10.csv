@@ -1,0 +1,5 @@
+model,Hit@1,Hit@10,MAP@10,MRR,NDCG@10,Recall@10,Precision@10
+Alibaba-NLP/gte-Qwen2-1.5B-instruct,0.306,0.742,0.422,0.462,0.497,0.693,0.081
+jinaai/jina-embeddings-v3,0.297,0.722,0.416,0.447,0.488,0.676,0.08
+Alibaba-NLP/gte-multilingual-base,0.311,0.694,0.406,0.441,0.472,0.639,0.076
+BAAI/bge-m3,0.344,0.756,0.44,0.481,0.511,0.69,0.082

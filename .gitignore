@@ -12,6 +12,7 @@ logs/
 qdrant_data/
 data/cases_data/
 data/laws_data/
+bge-reranker-v2-m3-onnx-o3-cpu/
 
 # IDE and editor configs
 .vscode/

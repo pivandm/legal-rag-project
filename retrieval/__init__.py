@@ -7,3 +7,4 @@ from retrieval.tools import (
     search_qdrant,
     search_with_precomputed_vectors,
 )
+from retrieval.reranker import ONNXReranker
