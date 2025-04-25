@@ -1,0 +1,12 @@
+# bot/config.yaml
+
+embedder_model:
+  # You can configure your embedder model here
+  model_name: "BAAI/bge-m3"
+
+reranker:
+  # If you have GPU:
+  # type: normal
+  # model_name: BAAI/bge-reranker-v2-m3
+  type: onnx_quantized
+  model_path: bot/reranker/model.onnx

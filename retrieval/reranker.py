@@ -3,7 +3,7 @@ from transformers import AutoTokenizer
 import numpy as np
 
 class ONNXReranker:
-    def __init__(self, model_path, tokenizer_name="BAAI/bge-reranker-v2-m3"):
+    def __init__(self, model_path="C:\\models\\bge-reranker-v2-m3-onnx-o3-cpu\\model.onnx", tokenizer_name="BAAI/bge-reranker-v2-m3"):
         self.session = onnxruntime.InferenceSession(model_path)
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
 
