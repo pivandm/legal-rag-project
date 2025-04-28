@@ -10,8 +10,7 @@ __pycache__/
 # Local logs, data, and Qdrant
 logs/
 qdrant_data/
-data/cases_data/
-data/laws_data/
+data/
 bge-reranker-v2-m3-onnx-o3-cpu/
 
 # IDE and editor configs
