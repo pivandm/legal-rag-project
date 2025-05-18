@@ -19,3 +19,5 @@ bge-reranker-v2-m3-onnx-o3-cpu/
 # Other files
 **/tmp.py
 demo.py
+generation_eval_*
+construct_eval_excel.py

@@ -1,0 +1,88 @@
+Date : 2025-05-18 18:23:38
+Directory : c:\vscode-projects\legal-rag-project
+Total : 51 files,  4855 codes, 64 comments, 462 blanks, all 5381 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| JSON     |          5 |      3,065 |          0 |          4 |      3,069 |
+| Python   |         33 |      1,697 |         59 |        443 |      2,199 |
+| YAML     |          6 |         58 |          5 |          8 |         71 |
+| CSV      |          6 |         27 |          0 |          6 |         33 |
+| Markdown |          1 |          8 |          0 |          1 |          9 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |         51 |      4,855 |         64 |        462 |      5,381 |
+| . (Files)                                                                             |          6 |        906 |          6 |         33 |        945 |
+| bot                                                                                   |          6 |        226 |         20 |         68 |        314 |
+| configs_retriever                                                                     |          5 |         53 |          0 |          5 |         58 |
+| eval_results                                                                          |          6 |         27 |          0 |          6 |         33 |
+| evaluation                                                                            |          4 |      2,419 |          2 |         42 |      2,463 |
+| ingestion                                                                             |          3 |        150 |         14 |         35 |        199 |
+| parsing_cases                                                                         |          6 |        355 |         14 |         96 |        465 |
+| parsing_laws                                                                          |         11 |        410 |          7 |        130 |        547 |
+| retrieval                                                                             |          4 |        309 |          1 |         47 |        357 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                              | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\vscode-projects\legal-rag-project\README.md                                        | Markdown |          8 |          0 |          1 |          9 |
+| c:\vscode-projects\legal-rag-project\bot\__init__.py                                  | Python   |          0 |          0 |          1 |          1 |
+| c:\vscode-projects\legal-rag-project\bot\config.yaml                                  | YAML     |          5 |          5 |          3 |         13 |
+| c:\vscode-projects\legal-rag-project\bot\load_config.py                               | Python   |         20 |          0 |          8 |         28 |
+| c:\vscode-projects\legal-rag-project\bot\main.py                                      | Python   |        162 |          8 |         40 |        210 |
+| c:\vscode-projects\legal-rag-project\bot\startup.py                                   | Python   |          8 |          0 |          3 |         11 |
+| c:\vscode-projects\legal-rag-project\bot\utils.py                                     | Python   |         31 |          7 |         13 |         51 |
+| c:\vscode-projects\legal-rag-project\configs_retriever\cases_bge.yaml                 | YAML     |         10 |          0 |          1 |         11 |
+| c:\vscode-projects\legal-rag-project\configs_retriever\laws_bge.yaml                  | YAML     |         10 |          0 |          1 |         11 |
+| c:\vscode-projects\legal-rag-project\configs_retriever\laws_gte.yaml                  | YAML     |         10 |          0 |          1 |         11 |
+| c:\vscode-projects\legal-rag-project\configs_retriever\laws_jina.yaml                 | YAML     |         12 |          0 |          1 |         13 |
+| c:\vscode-projects\legal-rag-project\configs_retriever\laws_qwen.yaml                 | YAML     |         11 |          0 |          1 |         12 |
+| c:\vscode-projects\legal-rag-project\construct_eval_excel.py                          | Python   |         10 |          3 |          4 |         17 |
+| c:\vscode-projects\legal-rag-project\eval_results\models_comparison_at10.csv          | CSV      |          5 |          0 |          1 |          6 |
+| c:\vscode-projects\legal-rag-project\eval_results\models_comparison_at15.csv          | CSV      |          5 |          0 |          1 |          6 |
+| c:\vscode-projects\legal-rag-project\eval_results\models_comparison_at5.csv           | CSV      |          5 |          0 |          1 |          6 |
+| c:\vscode-projects\legal-rag-project\eval_results\reranked_modes_comparison_at5.csv   | CSV      |          4 |          0 |          1 |          5 |
+| c:\vscode-projects\legal-rag-project\eval_results\retrieval_modes_comparison_at10.csv | CSV      |          4 |          0 |          1 |          5 |
+| c:\vscode-projects\legal-rag-project\eval_results\retrieval_modes_comparison_at5.csv  | CSV      |          4 |          0 |          1 |          5 |
+| c:\vscode-projects\legal-rag-project\evaluation\__init__.py                           | Python   |          0 |          0 |          1 |          1 |
+| c:\vscode-projects\legal-rag-project\evaluation\eval_dset_laws.json                   | JSON     |      1,288 |          0 |          2 |      1,290 |
+| c:\vscode-projects\legal-rag-project\evaluation\get_responses.py                      | Python   |        160 |          2 |         38 |        200 |
+| c:\vscode-projects\legal-rag-project\evaluation\laws_retriever_gridsearch.ipynb       | JSON     |        971 |          0 |          1 |        972 |
+| c:\vscode-projects\legal-rag-project\generation_eval_dset.json                        | JSON     |        202 |          0 |          1 |        203 |
+| c:\vscode-projects\legal-rag-project\generation_eval_results.json                     | JSON     |        302 |          0 |          0 |        302 |
+| c:\vscode-projects\legal-rag-project\generation_eval_results_old.json                 | JSON     |        302 |          0 |          0 |        302 |
+| c:\vscode-projects\legal-rag-project\ingestion\__init__.py                            | Python   |          0 |          0 |          1 |          1 |
+| c:\vscode-projects\legal-rag-project\ingestion\load_to_qdrant.py                      | Python   |         97 |          8 |         21 |        126 |
+| c:\vscode-projects\legal-rag-project\ingestion\upsert_fz.py                           | Python   |         53 |          6 |         13 |         72 |
+| c:\vscode-projects\legal-rag-project\logger.py                                        | Python   |         82 |          3 |         27 |        112 |
+| c:\vscode-projects\legal-rag-project\parsing_cases\__init__.py                        | Python   |          0 |          0 |          1 |          1 |
+| c:\vscode-projects\legal-rag-project\parsing_cases\collect_raw_texts.py               | Python   |        119 |         10 |         26 |        155 |
+| c:\vscode-projects\legal-rag-project\parsing_cases\collect_urls.py                    | Python   |        119 |          0 |         33 |        152 |
+| c:\vscode-projects\legal-rag-project\parsing_cases\deduplicate_urls.py                | Python   |         12 |          0 |          5 |         17 |
+| c:\vscode-projects\legal-rag-project\parsing_cases\split_clean.py                     | Python   |         99 |          4 |         28 |        131 |
+| c:\vscode-projects\legal-rag-project\parsing_cases\utils.py                           | Python   |          6 |          0 |          3 |          9 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\__init__.py                         | Python   |          0 |          1 |          1 |          2 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_apk.py                      | Python   |         32 |          0 |         11 |         43 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_fz.py                       | Python   |         62 |          2 |         13 |         77 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_gk.py                       | Python   |         45 |          1 |         14 |         60 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_gpk.py                      | Python   |         32 |          0 |         11 |         43 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_kas.py                      | Python   |         32 |          0 |         11 |         43 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_koap.py                     | Python   |         32 |          0 |         11 |         43 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_nk_rf.py                    | Python   |         43 |          2 |         14 |         59 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_uk.py                       | Python   |         32 |          0 |         11 |         43 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\parsing_upk.py                      | Python   |         32 |          0 |         11 |         43 |
+| c:\vscode-projects\legal-rag-project\parsing_laws\utils.py                            | Python   |         68 |          1 |         22 |         91 |
+| c:\vscode-projects\legal-rag-project\retrieval\__init__.py                            | Python   |         12 |          0 |          0 |         12 |
+| c:\vscode-projects\legal-rag-project\retrieval\config.py                              | Python   |         14 |          0 |          6 |         20 |
+| c:\vscode-projects\legal-rag-project\retrieval\reranker.py                            | Python   |         22 |          0 |          3 |         25 |
+| c:\vscode-projects\legal-rag-project\retrieval\tools.py                               | Python   |        261 |          1 |         38 |        300 |
+| Total                                                                                 |          |      4,855 |         64 |        462 |      5,381 |
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
