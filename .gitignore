@@ -1,7 +1,7 @@
 # Virtual env and secrets
 .venv/
 .env
-
+.VsCodeCounter/
 # Bytecode and compiled
 __pycache__/
 *.py[cod]
