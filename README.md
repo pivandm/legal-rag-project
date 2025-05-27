@@ -1,7 +1,6 @@
-```markdown
 # Legal RAG
 
-This repository contains a Legal Retrieval-Augmented Generation (RAG) system designed to support legal document parsing, embedding, retrieval, and conversational querying via bot integration.
+This repository contains a Legal RAG system designed to support legal document parsing, embedding, retrieval, and conversational querying via Telegram bot.
 
 ## Project Structure
 
@@ -13,13 +12,15 @@ This repository contains a Legal Retrieval-Augmented Generation (RAG) system des
 ├── eval_results/        # Output from evaluation experiments
 ├── evaluation/          # Scripts for evaluating generation and rertieval
 ├── ingestion/           # Scripts to load data into Qdrant
-├── logs/                # Logs will be here
+├── logs/                # Logs will be here (if one dicedes to run code)
 ├── parsing_cases/       # Case document parsing scripts
 ├── parsing_laws/        # Law document parsing scripts
 ├── qdrant_data/         # Qdrant-related local files (will be created if running db locally)
 ├── retrieval/           # Retrieval logic and modules
 ├── .env                 # Environment variable file (needs to be created)
 ├── .env.example         # Example environment variable template
+├── logger.py            # logger setup
+├── requiremnets.txt     # all depenadancies
 ├── .gitignore           # Git ignore file
 ```
 
@@ -95,5 +96,3 @@ python bot/main.py
 
 - This project uses Hugging Face models and Qdrant as the vector database.
 - All experiments are organized in the `evaluation/` and `eval_results/` directories.
-- Ensure that `.env` is properly configured before running the bot.
-```
